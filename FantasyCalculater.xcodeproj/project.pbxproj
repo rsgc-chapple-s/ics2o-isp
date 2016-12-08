@@ -22,6 +22,7 @@
 		3F904EA41DE73DC30093AF39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F904EA71DE73DC30093AF39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F904EA91DE73DC30093AF39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FF782A01DF9AB6F004F8AAB /* PlayGround 1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "PlayGround 1.playground"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +61,7 @@
 				3F904EA41DE73DC30093AF39 /* Assets.xcassets */,
 				3F904EA61DE73DC30093AF39 /* LaunchScreen.storyboard */,
 				3F904EA91DE73DC30093AF39 /* Info.plist */,
+				3FF782A01DF9AB6F004F8AAB /* PlayGround 1.playground */,
 			);
 			path = FantasyCalculater;
 			sourceTree = "<group>";
@@ -297,6 +299,7 @@
 				3F904EAE1DE73DC30093AF39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
