@@ -112,17 +112,18 @@ let overallWeekScore = goalieScore + totalDefendersScore + totalMidfieldersScore
 
 //writing a report on you're overall week score
 
+
 func reportingScore(overallWeekScore: Int) -> String {
     if overallWeekScore < 20 {
-        return "That is an awful score I would suggest improvements to your squad"
+        return "awful, look to sign some new players and maybe a whole new team"
     } else if overallWeekScore >= 21 && overallWeekScore <= 39 {
-        return "That score is okay but you should want better"
+        return "not a very good performance, try to make some improvements"
     } else if overallWeekScore >= 40 && overallWeekScore <= 55 {
-        return "That is a decent score, about average"
+        return "decent, your is about average"
     }  else if overallWeekScore > 55 && overallWeekScore <= 70 {
-        return "That is a pretty good score, you are doing well"
+        return "pretty good, you are doing well"
     } else if overallWeekScore > 70 {
-        return "Excellent work, your team is top notch quility"
+        return "excellent, your team is top notch quility"
     }
  return "Nice work mate"
 }
@@ -131,17 +132,17 @@ func reportingScore(overallWeekScore: Int) -> String {
 
 func reportingGKScore(goalieScore: Int) -> String {
     if goalieScore < 1 {
-        return "Your goalie is garbage, sign someone new"
+        return "was garbage, sign someone new"
     } else if goalieScore >= 1 && goalieScore <= 2 {
-        return "Your goalie hasn't put in a good performance but give him another chance if you feel like it"
+        return "didn't put in a good performance but give him another chance if you feel like it"
     } else if goalieScore == 3 {
-        return "Thats alright man, I'd take that from my goalkeeper anyday"
+        return "was alright, nothing much else I can say"
     } else if goalieScore >= 4 && goalieScore <= 6 {
-        return "That is pretty good, your goalie probably plays for a good team with good defenders"
+        return "was pretty good, he probably plays for a good team with some good defenders"
     } else if goalieScore > 6 && goalieScore <= 8 {
-        return "excellent performance mate, special night for you're goalie"
+        return "was excellent, special night for him"
     } else if goalieScore > 8 {
-        return "A world Class performance, I want you're goalie for my team now that I have seen what he can do"
+        return "was world class, I want you're goalie for my team now that I have seen what he can do"
     }
     return "Nice one mate, I like you're style"
 }
@@ -150,15 +151,15 @@ func reportingGKScore(goalieScore: Int) -> String {
 
 func reportingDefScores(totalDefendersScore: Int) -> String {
     if totalDefendersScore < 4 {
-        return "Not very good, some improvements are needed here"
+        return "not very good, some improvements are needed here"
     } else if totalDefendersScore >= 4 && totalDefendersScore <= 8 {
-        return "Okay, looks like you're defenders are holding their own"
+        return "okay, looks like your defenders are holding their own"
     } else if totalDefendersScore > 8 && totalDefendersScore <= 14 {
-        return "Alrighty, you're defenders are doing the dirty work and getting it done well, nice job"
+        return "alright, they did the dirty work and got it done well, nice job"
     } else if totalDefendersScore > 14 && totalDefendersScore < 20 {
-        return "Can I borrow some of you're defenders because they'd be an upgrade over just about anyone"
+        return "good, nice work mate"
     } else if totalDefendersScore >= 20 {
-        return "WOOOOOW, excellent performance, the best teams in the world will be calling wanting you're defenders after this performance"
+        return "excellent!! the best teams in the world will be calling wanting you're defenders after this performance"
     }
     return "A nice look at you're defence, now lets move on"
 }
@@ -167,15 +168,15 @@ func reportingDefScores(totalDefendersScore: Int) -> String {
 
 func reportingMidScores(totalMidfieldersScore: Int) -> String {
     if totalMidfieldersScore < 9 {
-        return "That is rubbish, get some new midfielders in you're squad"
+        return "rubbish, get some new midfielders in you're squad"
     } else if totalMidfieldersScore >= 9 && totalMidfieldersScore <= 15 {
-        return "Eh, not very good"
+        return "not very good"
     } else if totalMidfieldersScore > 15 && totalMidfieldersScore < 25 {
-        return "We're getting there, decent"
+        return "decent"
     } else if totalMidfieldersScore >= 25 && totalMidfieldersScore <= 32 {
-        return "Nice, nice, I would love my mids to perform as well as you're mids did"
+        return "great, I would love my mids to perform as well as your's"
     } else if totalMidfieldersScore > 32 {
-        return "World class, I have nothing else to say other than world class mate, nice job"
+        return "world class, I have nothing else to say other than world class mate, nice job"
     }
     return "Congrats mate on the midfield"
 }
@@ -184,19 +185,23 @@ func reportingMidScores(totalMidfieldersScore: Int) -> String {
 
 func reportingForwardsScores(totalForwardsScores: Int) -> String {
     if totalForwardsScores < 6 {
-        return "Not very good, to have a good team you're strikers must perform"
+        return "not very good, to have a good team your strikers must perform"
     } else if totalForwardsScores >= 6 && totalForwardsScores < 11 {
-        return "That is okay, wish for better luck next week but this is not bad"
+        return "okay, wish for better luck next week but this is not bad"
     } else if totalForwardsScores >= 11 && totalForwardsScores < 15 {
-        return "I see you, that is pretty good"
+        return "pretty good, nice job"
     } else if totalForwardsScores >= 15 && totalForwardsScores <= 20 {
-        return "That is good, can't ask for much more than that"
+        return "good, you can't ask for much more than that"
     } else if totalForwardsScores > 20 {
-        return "Brilliant attacking display, I love it"
+        return "brilliant, what an attacking display, I love it"
     }
-    return "Well that's it for you're attackers"
+    return "Well that's it for your attackers"
 }
 
+    
+func reportOnTeamsPerformance(reportingScore: String, reportingGKScore: String, reportingDefScores: String, reportingMidScores: String, reportingForwardsScores: String) {
+    print("Your teams overall score and performance was\(reportingScore) 
+}
     
 // Testing all of the reports
 
