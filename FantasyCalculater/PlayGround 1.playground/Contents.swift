@@ -200,17 +200,19 @@ func reportingForwardsScores(totalForwardsScores: Int) -> String {
 
     
 func reportOnTeamsPerformance(reportingScore: String, reportingGKScore: String, reportingDefScores: String, reportingMidScores: String, reportingForwardsScores: String) {
-    print("Your teams overall score and performance was\(reportingScore) 
+    print("Your teams overall score and performance was \(overallWeekScore). Your goalie \(goalieScore). Your defenders were \(totalDefendersScore). Your midfielders were \(totalMidfieldersScore). Your strikers were \(totalForwardsScores)")
 }
-    
+
 // Testing all of the reports
 
-reportingScore(overallWeekScore: overallWeekScore)
+let weekScoreReport = reportingScore(overallWeekScore: overallWeekScore)
 
-reportingGKScore(goalieScore: goalieScore)
+let goalieScoreReport = reportingGKScore(goalieScore: goalieScore)
 
-reportingDefScores(totalDefendersScore: totalDefendersScore)
+let defReportScore = reportingDefScores(totalDefendersScore: totalDefendersScore)
 
-reportingMidScores(totalMidfieldersScore: totalMidfieldersScore)
+let midReportScore = reportingMidScores(totalMidfieldersScore: totalMidfieldersScore)
 
-reportingForwardsScores(totalForwardsScores: totalForwardsScores)
+let strikerReportScore = reportingForwardsScores(totalForwardsScores: totalForwardsScores)
+
+reportOnTeamsPerformance(reportingScore: weekScoreReport, reportingGKScore: goalieScoreReport, reportingDefScores: defReportScore, reportingMidScores: midReportScore, reportingForwardsScores: strikerReportScore)
