@@ -215,4 +215,4 @@ let midReportScore = reportingMidScores(totalMidfieldersScore: totalMidfieldersS
 
 let strikerReportScore = reportingForwardsScores(totalForwardsScores: totalForwardsScores)
 
-reportOnTeamsPerformance(reportingScore: weekScoreReport, reportingGKScore: goalieScoreReport, reportingDefScores: defReportScore, reportingMidScores: midReportScore, reportingForwardsScores: strikerReportScore)
+ reportOnTeamsPerformance(reportingScore: weekScoreReport, reportingGKScore: goalieScoreReport, reportingDefScores: defReportScore, reportingMidScores: midReportScore, reportingForwardsScores: strikerReportScore)
